@@ -1,53 +1,94 @@
-📌 Diabetic Retinopathy Detection using PCA & Logistic Regression
-
+Diabetic Retinopathy Detection using PCA & Logistic Regression
 
 📝 Project Overview
-This project is a Diabetic Retinopathy Detection System that classifies retinal images as "Healthy" or "Diabetic Retinopathy" using Principal Component Analysis (PCA) for dimensionality reduction and Logistic Regression for classification.
+
+This project presents an AI-based system to classify retinal fundus images as either Healthy or Diabetic Retinopathy. It uses Principal Component Analysis (PCA) for dimensionality reduction and a custom Logistic Regression model for classification.
 
 Dataset: Rami/Diabetic_Retinopathy_Preprocessed_Dataset_256x256
-Model: Logistic Regression trained on PCA-reduced features
-Interface: Built with Gradio for an interactive UI
-Frameworks Used: NumPy, Matplotlib, Seaborn, scikit-learn, Gradio
-🚀 Features
-✅ Load and preprocess retinal images
-✅ Convert images to grayscale & resize to (128x128)
-✅ Apply PCA (50 components) for feature reduction
-✅ Train a Logistic Regression model with L2 regularization
-✅ Deploy an interactive web app using Gradio
-✅ Predict Diabetic Retinopathy vs. Healthy with real-time image upload
+
+Model: Logistic Regression trained on PCA-reduced image features
+
+Interface: Built with Gradio for an interactive web UI
+
+Libraries: NumPy, Matplotlib, Seaborn, Scikit-learn, Gradio
+
+🚀 Key Features
+
+📁 Load and preprocess retinal fundus images
+
+🧠 Convert images to grayscale and resize to 128x128
+
+📉 Apply PCA (50 components) for feature extraction and dimensionality reduction
+
+🔢 Train a Logistic Regression model with L2 regularization
+
+🌐 Launch an interactive web app using Gradio
+
+⚡ Real-time prediction: Upload → Classify → Get result
+
+✅ Labels: "Healthy" or "Diabetic Retinopathy"
+
+🎯 How to Use
+Clone the repo and install dependencies:
+
+pip install -r requirements.txt
+Run the app:
+
+python app.py
+Upload a retinal image (JPG/PNG)
+
+Click Submit to classify
+
+View your result: ✅ Healthy or ⚠️ Diabetic Retinopathy
+
+🖼️ Sample Predictions
 
 
-
-
-🎯 How to Use?
-Upload a retinal image (JPG/PNG).
-Click Submit to classify the image.
-Get the result: "Healthy" or "Diabetic Retinopathy"
-(Optional) Improve the model using your own dataset!
-🖼️ Sample Results
 Input Image	Prediction
-	✅ Healthy
-	⚠️ Diabetic Retinopathy
+Retina_001.jpg	✅ Healthy
+Retina_045.jpg	⚠️ Diabetic Retinopathy
 📊 Model Performance
+
+
 Metric	Score
 Accuracy	85%
 Loss	0.25
 PCA Components	50
 📖 Dataset Details
-Source: Hugging Face - Rami/Diabetic_Retinopathy_Preprocessed_Dataset_256x256
-Total Samples: 2000
-Labels: "Healthy" (0) and "Diabetic Retinopathy" (1)
-Image Size: 256x256 pixels (resized to 128x128)
-🔧 Future Improvements
-✔ Add Deep Learning (CNN-based) classification
-✔ Use a larger dataset for better accuracy
-✔ Deploy on Hugging Face Spaces or Streamlit
+Source: Hugging Face
 
-📝 License
-This project is licensed under the MIT License.
+Total Samples: 2,000 images
+
+Labels:
+
+0: Healthy
+
+1: Diabetic Retinopathy
+
+Original Image Size: 256x256
+
+Resized To: 128x128 (for PCA)
+
+🔧 Future Improvements
+
+
+🤖 Add Deep Learning models (e.g., CNN-based classifiers)
+
+📈 Train on larger and more diverse datasets
+
+☁️ Deploy to Hugging Face Spaces or Streamlit Cloud
+
+🔍 Add Grad-CAM or other visual explainability tools
+
+📜 License
+
+
+Licensed under the MIT License.
 
 📩 Contact & Contributions
-💡 Want to contribute? Feel free to submit Pull Requests!
-For any queries, reach out at: your.email@example.com
 
-⭐ If you found this project helpful, give it a star on GitHub! ⭐
+
+💡 Contributions are welcome! Feel free to open an issue or submit a pull request.
+📬 For any queries or collaboration, reach out at: chintanchhajed@gmail.com
+
+⭐ If you found this project helpful, give it a star on GitHub!
